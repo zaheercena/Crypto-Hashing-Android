@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/compare_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message One"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/compare_et1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input First Message" >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/compare_tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message Two"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/compare_et2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Second Message" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageButton
+            android:id="@+id/compare"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:onClick="compareresult_click"
+            android:src="@android:drawable/ic_search_category_default" />
+
+        <ImageButton
+            android:id="@+id/back2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_revert" android:onClick="back"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/compare_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>
